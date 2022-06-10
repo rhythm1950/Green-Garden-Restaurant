@@ -209,7 +209,7 @@ nav .navbar a:hover {
 /* hero section */
 header.hero {
     height: 600px;
-    background-image: url(../images/bg.jpg);
+    background-image: url(./images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -510,7 +510,7 @@ section.our-specialty .service-card p {
 
 /* big-deal section */
 section.big-deal {
-    background: url(../images/bg-2.jpg);
+    background: url(./images/bg-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
