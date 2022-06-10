@@ -1,18 +1,6 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&display=swap');
 
-/* color variables */
-:root {
-    --primary: #00b436;
-    --secondary: #d40404;
-    --ternary: #6C6C6C;
-    --danger: #FE4545;
-    --pure: #FEFEFE;
-    --light: #F0F0F0;
-    --white: #FFFFFF;
-    --footer: #2D333F;
-}
-
 /* Global styles */
 * {
     padding: 0;
@@ -66,7 +54,7 @@ body {
 .nav-background {
     width: 100%;
     height: 100%;
-    background: var(--light);
+    background: #F0F0F0;
     position: absolute;
     top: 0;
     left: 0;
@@ -103,7 +91,7 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: var(--white);
+    background: #FFFFFF;
     z-index: 2;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -120,14 +108,14 @@ body {
 
 /* topbar */
 header.topbar {
-    background: var(--secondary);
-    color: var(--pure);
+    background: #d40404;
+    color: #FEFEFE;
     font-family: 'Poppins', sans-serif;
     padding: 0.75rem 0;
 }
 
 header.topbar .auth>div a {
-    color: var(--pure);
+    color: #FEFEFE;
     text-decoration: none;
 }
 
@@ -171,7 +159,7 @@ nav .top .time h6 {
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.055rem;
     font-size: 0.75rem;
-    color: var(--ternary);
+    color: #6C6C6C;
 }
 
 nav .top .contact img,
@@ -185,7 +173,7 @@ nav .top .time img {
 
 nav .navbar a {
     text-decoration: none;
-    color: var(--secondary);
+    color: #d40404;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     padding: 1rem 1.5rem;
@@ -197,13 +185,13 @@ nav .navbar a {
 }
 
 nav .navbar a.active {
-    background: var(--primary);
-    color: var(--pure);
+    background: #00b436;
+    color: #FEFEFE;
 }
 
 nav .navbar a:hover {
-    background: var(--primary);
-    color: var(--pure);
+    background: #00b436;
+    color: #FEFEFE;
 }
 
 /* hero section */
@@ -225,15 +213,15 @@ header.hero .welcome {
 
 header.hero .welcome span {
     font-family: 'Poppins', sans-serif;
-    color: var(--secondary);
+    color: #d40404;
     margin-right: 0.75rem;
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 1.6rem;
 }
 
 header.hero h1 {
     font-family: 'Poppins', sans-serif;
-    color: var(--white);
+    color: #FFFFFF;
     font-size: 2.5rem;
     margin-bottom: 0.75rem;
 }
@@ -243,7 +231,7 @@ header.hero p {
     width: 50%;
     line-height: 1.5;
     margin-bottom: 1.5rem;
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 .btn {
@@ -265,25 +253,25 @@ header.hero p {
 }
 
 .btn-primary {
-    background: var(--primary);
-    color: var(--white);
+    background: #00b436;
+    color: #FFFFFF;
 }
 
 .btn-primary:hover {
-    background: var(--white);
-    color: var(--primary);
-    border: 1px solid var(--primary);
+    background: #FFFFFF;
+    color: #00b436;
+    border: 1px solid #00b436;
 }
 
 .btn-secondary {
-    background: var(--secondary);
-    color: var(--white);
+    background: #d40404;
+    color: #FFFFFF;
 }
 
 .btn-secondary:hover {
-    background: var(--white);
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
+    background: #FFFFFF;
+    color: #d40404;
+    border: 1px solid #d40404;
 }
 
 header.hero button:first-child {
@@ -302,7 +290,7 @@ section {
 
 /* popular meals */
 section.popular-meals {
-    background: var(--light);
+    background: #F0F0F0;
 }
 
 .section-heading {
@@ -314,7 +302,7 @@ section.popular-meals {
 }
 
 section.popular-meals .food-slider .food-card {
-    background: var(--white);
+    background: #FFFFFF;
     padding: 1.5rem 0;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -331,7 +319,7 @@ section.popular-meals .food-slider .food-card .product-image img {
 }
 
 hr {
-    border: 1px solid var(--light);
+    border: 1px solid #F0F0F0;
     opacity: 0.8;
     margin: 1rem 0;
 }
@@ -356,15 +344,15 @@ section.popular-meals .food-slider .food-card .stars img {
 
 section.popular-meals .food-slider .food-card .price {
     font-family: 'Poppins', sans-serif;
-    color: var(--danger);
+    color: #FE4545;
     margin-bottom: 1rem;
 }
 
 section.popular-meals .food-slider .food-card button {
     font-family: 'Poppins', sans-serif;
-    color: var(--secondary);
-    background: var(--white);
-    border: 2px solid var(--primary);
+    color: #d40404;
+    background: #FFFFFF;
+    border: 2px solid #00b436;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -383,13 +371,13 @@ section.popular-meals .food-slider .food-card button {
 }
 
 section.popular-meals .food-slider .food-card button:hover {
-    background: var(--primary);
-    color: var(--white);
+    background: #00b436;
+    color: #FFFFFF;
 }
 
 /* slider */
 .food-slider .food-card button img {
-    background: var(--primary);
+    background: #00b436;
     padding: 0.50rem;
     height: 32px;
     margin-right: 1.2rem;
@@ -407,7 +395,7 @@ section.popular-meals .food-slider .food-card button:hover {
     width: 30px;
     height: 30px;
     border: none;
-    background: var(--primary);
+    background: #00b436;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -456,7 +444,7 @@ section.about-green img {
 section.about-green h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.4rem;
-    color: var(--secondary);
+    color: #d40404;
     margin-bottom: .6rem;
     line-height: 1.6;
 }
@@ -468,7 +456,7 @@ section.about-green p {
 
 /* specialty section */
 section.our-specialty {
-    background: var(--light);
+    background: #F0F0F0;
     position: relative;
     z-index: 0;
     margin-top: -80px;
@@ -480,7 +468,7 @@ section.our-specialty .card-wrapper {
 }
 
 section.our-specialty .service-card {
-    background: var(--white);
+    background: #FFFFFF;
     text-align: center;
     padding: 2rem;
     padding-top: 2rem;
@@ -505,7 +493,7 @@ section.our-specialty .service-card p {
 }
 
 .text-primary {
-    color: var(--primary);
+    color: #00b436;
 }
 
 /* big-deal section */
@@ -527,7 +515,7 @@ section.big-deal .timer {
 
 section.big-deal .timer div {
     margin-right: 2rem;
-    background: var(--primary);
+    background: #00b436;
     width: 150px;
     height: 150px;
     border-radius: 4px;
@@ -544,22 +532,22 @@ section.big-deal .timer div {
 section.big-deal .timer div span:first-child {
     font-family: 'Poppins', sans-serif;
     font-size: 2.5rem;
-    color: var(--white);
+    color: #FFFFFF;
     margin-bottom: 0.05rem;
 }
 
 section.big-deal .timer div span:last-child {
     font-family: 'Poppins', sans-serif;
-    color: var(--white);
+    color: #FFFFFF;
 }
 
 .text-pure {
-    color: var(--pure);
+    color: #FEFEFE;
 }
 
 /* news secction */
 section.latest-news {
-    background: var(--light);
+    background: #F0F0F0;
     padding-bottom: 10rem;
 }
 
@@ -571,7 +559,7 @@ section.latest-news .article-wrapper {
 
 .latest-news .article-wrapper .card {
     margin-right: 2rem;
-    background: var(--white);
+    background: #FFFFFF;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -611,7 +599,7 @@ section.latest-news .article-wrapper {
 
 /* subscribe section */
 section.subscribe {
-    background: var(--primary);
+    background: #00b436;
 }
 
 section.subscribe img {
@@ -645,7 +633,7 @@ section.subscribe p {
 }
 
 section.subscribe .input-wrap {
-    background: var(--white);
+    background: #FFFFFF;
     display: flex;
     padding: 0.3rem;
     border-radius: 4px;
@@ -669,8 +657,8 @@ section.subscribe .input-wrap input:focus {
 section.subscribe .input-wrap button {
     padding: 0.8rem 2rem;
     border: none;
-    background: var(--primary);
-    color: var(--pure);
+    background: #00b436;
+    color: #FEFEFE;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -687,7 +675,7 @@ section.subscribe .input-wrap button {
 }
 
 section.subscribe .input-wrap button:hover {
-    background: var(--secondary);
+    background: #d40404;
 }
 
 /* contact-us section */
@@ -735,13 +723,13 @@ section.contact-us .contact-info>div>div>div span:first-child {
 
 /* footer */
 footer {
-    background: var(--footer);
+    background: #2D333F;
     padding: 4rem 0;
 }
 
 footer .container {
     display: flex;
-    color: var(--pure);
+    color: #FEFEFE;
 }
 
 footer .box {
@@ -761,7 +749,7 @@ footer .box ul {
 }
 
 footer .box ul li a {
-    color: var(--pure);
+    color: #FEFEFE;
     text-decoration: none;
     transition: all .3s ease;
     -webkit-transition: all .3s ease;
@@ -771,11 +759,11 @@ footer .box ul li a {
 }
 
 footer .box ul li a:hover {
-    color: var(--primary);
+    color: #00b436;
 }
 
 footer .box h3 {
-    border-bottom: 1px solid var(--primary);
+    border-bottom: 1px solid #00b436;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
 }
@@ -812,14 +800,14 @@ footer .box:nth-child(3) ul li {
 
 footer.copyright {
     padding: 1rem 0;
-    background: var(--secondary);
-    color: var(--pure);
+    background: #d40404;
+    color: #FEFEFE;
     text-align: center;
     font-size: 0.75rem;
 }
 
 footer.copyright a {
-    color: var(--primary);
+    color: #00b436;
     text-decoration: none;
 }
 
@@ -841,12 +829,12 @@ footer.copyright a {
 
 .nav-background .mobile-nav ul li a {
     text-decoration: none;
-    color: var(--secondary);
+    color: #d40404;
     font-family: 'Poppins', sans-serif;
 }
 
 .nav-background .mobile-nav ul li a:hover {
-    color: var(--primary);
+    color: #00b436;
 }
 
 .nav-background .contact,
@@ -877,7 +865,7 @@ footer.copyright a {
 }
 
 .nav-background .cart a {
-    color: var(--secondary);
+    color: #d40404;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
