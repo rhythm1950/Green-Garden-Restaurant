@@ -443,7 +443,8 @@ section.about-green img {
 /* about section */
 section.about-green h2 {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    font-weight: bold;
     color: #d40404;
     margin-bottom: .6rem;
     line-height: 1.6;
@@ -481,10 +482,17 @@ section.our-specialty .service-card {
     -o-border-radius: 4px;
 }
 
+section.our-specialty .service-card img {
+    width: 180px;
+    height: 170px;
+    margin-bottom: 20px;
+}
+
 section.our-specialty .service-card h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    font-weight: 700;
 }
 
 section.our-specialty .service-card p {
