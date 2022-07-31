@@ -1,626 +1,704 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Bootstrap css cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
 
     <!-- slick css -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Green Garden Restaurant</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Mobile menu -->
     <div class="main-wrapper">
-        <div class="nav-background">
-            <div class="mobile-logo">
-                <img src="./images/logo.png" alt="logo">
+      <div class="nav-background">
+        <div class="mobile-logo">
+          <img src="./images/logo.png" alt="logo" />
+        </div>
+
+        <div class="mobile-nav">
+          <div class="cart">
+            <div class="flex items-center">
+              <img src="./icons/cart-dark.svg" alt="icon" />
+              <a href="#">0 Items - ($0.00)</a>
             </div>
+          </div>
 
-            <div class="mobile-nav">
-                <div class="cart">
-                    <div class="flex items-center">
-                        <img src="./icons/cart-dark.svg" alt="icon">
-                        <a href="#">0 Items - ($0.00)</a>
-                    </div>
+          <div class="nav-top">
+            <ul>
+              <li>
+                <a href="#hero">Home</a>
+              </li>
+              <li>
+                <a href="#meals">Popular Meals</a>
+              </li>
+              <li>
+                <a href="#about">About Us</a>
+              </li>
+              <li>
+                <a href="#specialty">Our Specialty</a>
+              </li>
+              <li>
+                <a href="#big-deal">Big Deal</a>
+              </li>
+              <li>
+                <a href="#blogs">Blogs</a>
+              </li>
+              <li>
+                <a href="#newsletter">Newsletter</a>
+              </li>
+              <li>
+                <a href="#contact-us">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact flex items-center">
+            <div>
+              <h5>Call us: (+880) 123 456 789</h5>
+              <h6>E-mail : support@green.com</h6>
+            </div>
+          </div>
+
+          <div class="time flex items-center">
+            <div>
+              <h5>Open Hours:</h5>
+              <h6>Mon - Sat (8.00am - 12.00am)</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="site-content-wrapper">
+        <div class="nav-trigger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-bar-chart"
+          >
+            <line x1="12" y1="20" x2="12" y2="10" />
+            <line x1="18" y1="20" x2="18" y2="4" />
+            <line x1="6" y1="20" x2="6" y2="16" />
+          </svg>
+        </div>
+
+        <!-- Header -->
+        <div class="site-content">
+          <header class="topbar">
+            <div class="container flex justify-between items-center">
+              <div class="icons">
+                <a href="#"><img src="./icons/facebook.svg" alt="icon" /></a>
+                <a href="#"><img src="./icons/twitter.svg" alt="icon" /></a>
+                <a href="#"><img src="./icons/google.svg" alt="icon" /></a>
+                <a href="#"><img src="./icons/instagram.svg" alt="icon" /></a>
+                <a href="#"><img src="./icons/search.svg" alt="icon" /></a>
+              </div>
+
+              <div class="auth flex items-center">
+                <div>
+                  <img src="./icons/user-icon.svg" alt="icon" />
+                  <a href="#">Log in</a>
                 </div>
 
-                <div class="nav-top">
-                    <ul>
-                        <li>
-                            <a href="#hero">Home</a>
-                        </li>
-                        <li>
-                            <a href="#meals">Popular Meals</a>
-                        </li>
-                        <li>
-                            <a href="#about">About Us</a>
-                        </li>
-                        <li>
-                            <a href="#specialty">Our Specialty</a>
-                        </li>
-                        <li>
-                            <a href="#big-deal">Big Deal</a>
-                        </li>
-                        <li>
-                            <a href="#blogs">Blogs</a>
-                        </li>
-                        <li>
-                            <a href="#newsletter">Newsletter</a>
-                        </li>
-                        <li>
-                            <a href="#contact-us">Contact Us</a>
-                        </li>
-                    </ul>
+                <span class="divider">|</span>
+                <div>
+                  <img src="./icons/edit.svg" alt="icon" />
+                  <a href="#">Register Now</a>
                 </div>
 
+                <span class="divider">|</span>
+                <div>
+                  <img src="./icons/cart.svg" alt="icon" />
+                  <a href="#">0 Items - ($0.00)</a>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- Nav -->
+          <nav>
+            <div class="top">
+              <div class="container flex justify-between">
                 <div class="contact flex items-center">
-                    <div>
-                        <h5>Call us: (+880) 123 456 789</h5>
-                        <h6>E-mail : support@green.com</h6>
-                    </div>
+                  <div>
+                    <h5>Call US: (+880) 123 456 789</h5>
+                    <h6>E-mail : support@green.com</h6>
+                  </div>
+                </div>
+
+                <div class="branding">
+                  <img src="./images/logo.png" alt="logo" />
                 </div>
 
                 <div class="time flex items-center">
-                    <div>
-                        <h5>Open Hours:</h5>
-                        <h6>Mon - Sat (8.00am - 12.00am)</h6>
-                    </div>
+                  <div>
+                    <h5>Open Hours</h5>
+                    <h6>Mon - Sat (8.00am - 12.00am)</h6>
+                  </div>
                 </div>
-            </div>
-        </div>
-
-        <div class="site-content-wrapper">
-            <div class="nav-trigger">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="feather feather-bar-chart">
-                    <line x1="12" y1="20" x2="12" y2="10" />
-                    <line x1="18" y1="20" x2="18" y2="4" />
-                    <line x1="6" y1="20" x2="6" y2="16" />
-                </svg>
+              </div>
             </div>
 
-            <!-- Header -->
-            <div class="site-content">
-                <header class="topbar">
-                    <div class="container flex justify-between items-center">
-                        <div class="icons">
-                            <a href="#"><img src="./icons/facebook.svg" alt="icon"></a>
-                            <a href="#"><img src="./icons/twitter.svg" alt="icon"></a>
-                            <a href="#"><img src="./icons/google.svg" alt="icon"></a>
-                            <a href="#"><img src="./icons/instagram.svg" alt="icon"></a>
-                            <a href="#"><img src="./icons/search.svg" alt="icon"></a>
-                        </div>
+            <div class="menu-Navbar">
+              <div class="container flex justify-center">
+                <a href="#hero" class="active">Home</a>
+                <a href="#meals">Popular Meals</a>
+                <a href="#about">About Us</a>
+                <a href="#specialty">Our Specialty</a>
+                <a href="#big-deal">Big Deal</a>
+                <a href="#blogs">Blogs</a>
+                <a href="#newsletter">Newsletter</a>
+                <a href="#contact-us">Contact Us</a>
+              </div>
+            </div>
+          </nav>
 
-                        <div class="auth flex items-center">
-                            <div>
-                                <img src="./icons/user-icon.svg" alt="icon">
-                                <a href="#">Log in</a>
-                            </div>
+          <!-- Hero section -->
+          <header class="hero flex items-center" id="hero">
+            <div class="container">
+              <div class="welcome flex items-center">
+                <span>Welcome to</span>
+              </div>
+              <h1>Green Garden Restaurant</h1>
+              <p>
+                Lorem Ipsum simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy.
+              </p>
+              <div>
+                <button class="btn btn-primary">Read More</button>
+                <button class="btn btn-secondary">Shop Now</button>
+              </div>
+            </div>
+          </header>
 
-                            <span class="divider">|</span>
-                            <div>
-                                <img src="./icons/edit.svg" alt="icon">
-                                <a href="#">Register Now</a>
-                            </div>
-
-                            <span class="divider">|</span>
-                            <div>
-                                <img src="./icons/cart.svg" alt="icon">
-                                <a href="#">0 Items - ($0.00)</a>
-                            </div>
-                        </div>
+          <!-- Popular meals section -->
+          <section class="popular-meals" id="meals">
+            <div class="container">
+              <h1 class="section-heading">Popular Meals</h1>
+              <div class="slider">
+                <button class="slider-btn prev-btn">
+                  <img src="./icons/pre.svg" alt="icon" />
+                </button>
+                <button class="slider-btn next-btn">
+                  <img src="./icons/next.svg" alt="icon" />
+                </button>
+                <div class="food-slider">
+                  <div class="food-card -sm">
+                    <div class="product-image flex items-center justify-center">
+                      <img src="./images/plate-1.png" alt="food" />
                     </div>
-                </header>
-
-                <!-- Nav -->
-                <nav>
-                    <div class="top">
-                        <div class="container flex justify-between">
-                            <div class="contact flex items-center">
-                                <div>
-                                    <h5>Call US: (+880) 123 456 789</h5>
-                                    <h6>E-mail : support@green.com</h6>
-                                </div>
-                            </div>
-
-                            <div class="branding">
-                                <img src="./images/logo.png" alt="logo">
-                            </div>
-
-                            <div class="time flex items-center">
-                                <div>
-                                    <h5>Open Hours</h5>
-                                    <h6>Mon - Sat (8.00am - 12.00am)</h6>
-                                </div>
-                            </div>
-                        </div>
+                    <hr />
+                    <div>
+                      <h2 class="text-center">Summer Salad</h2>
+                      <div class="stars flex justify-center items-center">
+                        <img src="./icons/start-filled.svg" alt="icon" />
+                        <img src="./icons/start-filled.svg" alt="icon" />
+                        <img src="./icons/start-filled.svg" alt="icon" />
+                        <img src="./icons/star-grey.svg" alt="icon" />
+                        <img src="./icons/star-grey.svg" alt="icon" />
+                      </div>
+                      <div class="price text-center">$ 1.25</div>
+                      <div class="flex justify-center">
+                        <button>
+                          <img src="./icons/cart-2.svg" alt="icon" />
+                          <span>Add to cart</span>
+                        </button>
+                      </div>
                     </div>
+                  </div>
 
-                    <div class="menu-Navbar ">
-                        <div class="container flex justify-center">
-                            <a href="#hero" class="active">Home</a>
-                            <a href="#meals">Popular Meals</a>
-                            <a href="#about">About Us</a>
-                            <a href="#specialty">Our Specialty</a>
-                            <a href="#big-deal">Big Deal</a>
-                            <a href="#blogs">Blogs</a>
-                            <a href="#newsletter">Newsletter</a>
-                            <a href="#contact-us">Contact Us</a>
-                        </div>
+                  <div class="food-card -sm">
+                    <div class="product-image flex items-center justify-center">
+                      <img src="./images/plate-2.png" alt="food" />
                     </div>
-                </nav>
-
-                <!-- Hero section -->
-                <header class="hero flex items-center" id="hero">
-                    <div class="container">
-                        <div class="welcome flex items-center">
-                            <span>Welcome to</span>
-                        </div>
-                        <h1>Green Garden Restaurant</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been the
-                            industry's standard dummy.</p>
-                        <div>
-                            <button class="btn btn-primary">Read More</button>
-                            <button class="btn btn-secondary">Shop Now</button>
-                        </div>
+                    <hr />
+                    <div>
+                      <h2 class="text-center">Russian Salad</h2>
+                      <div class="stars flex justify-center items-center">
+                        <img src="./icons/start-filled.svg" alt="icon" />
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/star-grey.svg" alt="food" />
+                        <img src="./icons/star-grey.svg" alt="food" />
+                      </div>
+                      <div class="price text-center">$ 1.25</div>
+                      <div class="flex justify-center">
+                        <button>
+                          <img src="./icons/cart-2.svg" alt="food" />
+                          <span>Add to cart</span>
+                        </button>
+                      </div>
                     </div>
-                </header>
+                  </div>
 
-                <!-- Popular meals section -->
-                <section class="popular-meals" id="meals">
-                    <div class="container">
-                        <h1 class="section-heading">Popular Meals</h1>
-                        <div class="slider">
-                            <button class="slider-btn prev-btn"><img src="./icons/pre.svg" alt="icon"></button>
-                            <button class="slider-btn next-btn"><img src="./icons/next.svg" alt="icon"></button>
-                            <div class="food-slider">
-
-                                <div class="food-card -sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-1.png" alt="food">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Summer Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="icon">
-                                            <img src="./icons/start-filled.svg" alt="icon">
-                                            <img src="./icons/start-filled.svg" alt="icon">
-                                            <img src="./icons/star-grey.svg" alt="icon">
-                                            <img src="./icons/star-grey.svg" alt="icon">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="icon">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="food-card -sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-2.png" alt="food">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Russian Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="icon">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/star-grey.svg" alt="food">
-                                            <img src="./icons/star-grey.svg" alt="food">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="food">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="food-card -sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-3.png" alt="food">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Greek Salad</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/star-grey.svg" alt="food">
-                                            <img src="./icons/star-grey.svg" alt="food">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="food">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="food-card -sm">
-                                    <div class="product-image flex items-center justify-center">
-                                        <img src="./images/plate-3.png" alt="food">
-                                    </div>
-                                    <hr>
-                                    <div>
-                                        <h2 class="text-center">Cottage pie</h2>
-                                        <div class="stars flex justify-center items-center">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/start-filled.svg" alt="food">
-                                            <img src="./icons/star-grey.svg" alt="food">
-                                            <img src="./icons/star-grey.svg" alt="food">
-                                        </div>
-                                        <div class="price text-center">
-                                            $ 1.25
-                                        </div>
-                                        <div class="flex justify-center">
-                                            <button>
-                                                <img src="./icons/cart-2.svg" alt="food">
-                                                <span>Add to cart</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                  <div class="food-card -sm">
+                    <div class="product-image flex items-center justify-center">
+                      <img src="./images/plate-3.png" alt="food" />
                     </div>
-                </section>
-
-                <!-- About section -->
-                <section class="about-green" id="about">
-                    <div class="container">
-                        <div class="about-green-wrap flex">
-                            <div class="flex-1">
-                                <img src="./images/cook.png" alt="food">
-                            </div>
-                            <div class="flex-1">
-                                <h2>Green Garden is a long established fact that a reader will be distracted</h2>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
-                                    piece of
-                                    classical Latin literature from 45 BC, making it over 2000 years old. Richard
-                                    McClintock, a The standard chunk of Lorem
-                                    Ipsum used
-                                    since the 1500s is reproduced below for those interested. Lorem ipsum dolor sit
-                                    amet, consectetur adipisicing elit. Placeat natus consectetur soluta nobis molestias
-                                    quo magnam corrupti provident sit quod! Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Non, repellendus.</p>
-                                <button class="btn btn-secondary">Read More</button>
-                            </div>
-                        </div>
+                    <hr />
+                    <div>
+                      <h2 class="text-center">Greek Salad</h2>
+                      <div class="stars flex justify-center items-center">
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/star-grey.svg" alt="food" />
+                        <img src="./icons/star-grey.svg" alt="food" />
+                      </div>
+                      <div class="price text-center">$ 1.25</div>
+                      <div class="flex justify-center">
+                        <button>
+                          <img src="./icons/cart-2.svg" alt="food" />
+                          <span>Add to cart</span>
+                        </button>
+                      </div>
                     </div>
-                </section>
+                  </div>
 
-                <!-- Our specialty section -->
-                <section class="our-specialty" id="specialty">
-                    <div class="container">
-                        <h1 class="section-heading">Our Specialty</h1>
-                        <div class="card-wrapper flex">
-                            <div class="service-card -sm">
-                                <img src="./images/plate-1.png" alt="food">
-                                <h2>Free Home delivery</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button class="btn btn-secondary">Order Now</button>
-                            </div>
-
-                            <div class="service-card -sm">
-                                <img src="./images/plate-2.png" alt="food">
-                                <h2>30 Days Return Service</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button class="btn btn-primary">Order Now</button>
-                            </div>
-
-                            <div class="service-card -sm">
-                                <img src="./images/plate-3.png" alt="food">
-                                <h2>Money Back Guaranted</h2>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                                <button class="btn btn-secondary">Order Now</button>
-                            </div>
-
-                        </div>
+                  <div class="food-card -sm">
+                    <div class="product-image flex items-center justify-center">
+                      <img src="./images/plate-3.png" alt="food" />
                     </div>
-                </section>
-
-                <!-- Big deal section -->
-                <section class="big-deal" id="big-deal">
-                    <div class="container">
-                        <h1 class="section-heading text-pure">Big Deals of the Week</h1>
-
-                        <div class="timer">
-                            <div>
-                                <span>02</span>
-                                <span>Days</span>
-                            </div>
-                            <div>
-                                <span>24</span>
-                                <span>Hours</span>
-                            </div>
-                            <div>
-                                <span>55</span>
-                                <span>Minutes</span>
-                            </div>
-                            <div>
-                                <span>58</span>
-                                <span>Seconds</span>
-                            </div>
-                        </div>
-
+                    <hr />
+                    <div>
+                      <h2 class="text-center">Cottage pie</h2>
+                      <div class="stars flex justify-center items-center">
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/start-filled.svg" alt="food" />
+                        <img src="./icons/star-grey.svg" alt="food" />
+                        <img src="./icons/star-grey.svg" alt="food" />
+                      </div>
+                      <div class="price text-center">$ 1.25</div>
+                      <div class="flex justify-center">
+                        <button>
+                          <img src="./icons/cart-2.svg" alt="food" />
+                          <span>Add to cart</span>
+                        </button>
+                      </div>
                     </div>
-                </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
 
-                <!-- News section -->
-                <section class="latest-news" id="blogs">
-                    <div class="container">
-                        <h1 class="section-heading">Latest News from Blogs</h1>
-                        <div class="article-wrapper">
-                            <article class="card -sm">
-                                <div>
-                                    <img src="./images/coffee.jpg" alt="food">
-                                </div>
-                                <div class="card-content">
-                                    <div class="post-meta flex items-center justify-between">
-                                        <span>July 03, 2017</span>
-                                        <div>
-                                            <span>Posted by <strong>green</strong></span>
-                                            <span class="comment-count">12 Comments</span>
-                                        </div>
-                                    </div>
+          <!-- About section -->
+          <section class="about-green" id="about">
+            <div class="container">
+              <div class="about-green-wrap flex">
+                <div class="flex-1">
+                  <img src="./images/cook.png" alt="food" />
+                </div>
+                <div class="flex-1">
+                  <h2>
+                    Green Garden is a long established fact that a reader will
+                    be distracted
+                  </h2>
+                  <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random
+                    text. It has roots in a piece of classical Latin literature
+                    from 45 BC, making it over 2000 years old. Richard
+                    McClintock, a The standard chunk of Lorem Ipsum used since
+                    the 1500s is reproduced below for those interested. Lorem
+                    ipsum dolor sit amet, consectetur adipisicing elit. Placeat
+                    natus consectetur soluta nobis molestias quo magnam corrupti
+                    provident sit quod! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Non, repellendus.
+                  </p>
+                  <button class="btn btn-secondary">Read More</button>
+                </div>
+              </div>
+            </div>
+          </section>
 
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a
-                                        page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                        more
-                                        letters.</p>
-                                </div>
-                            </article>
-
-                            <article class="card -sm">
-                                <div>
-                                    <img src="./images/donut.jpg" alt="food">
-                                </div>
-                                <div class="card-content">
-                                    <div class="post-meta flex items-center justify-between">
-                                        <span>July 03, 2017</span>
-                                        <div>
-                                            <span>Posted by <strong>green</strong></span>
-                                            <span class="comment-count">12 Comments</span>
-                                        </div>
-                                    </div>
-
-                                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
-                                    <p>It is a long established fact that a reader will be distracted by the readable
-                                        content of a
-                                        page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                                        more
-                                        letters.</p>
-                                </div>
-                            </article>
-                        </div>
-
-                        <div class="text-center btn-wrapper">
-                            <button class="btn btn-secondary">View All</button>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Subscribe section -->
-                <section class="subscribe" id="newsletter">
-                    <div class="container flex items-center">
-                        <div>
-                            <img src="./images/subscribe.png" alt="food">
-                        </div>
-                        <div>
-                            <h1>Subscribe to our newsletter</h1>
-                            <p>Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many
-                                web sites
-                                still in their infancy.</p>
-                            <div class="input-wrap">
-                                <input type="email" placeholder="email@green.com">
-                                <button>Subscribe</button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact us section -->
-                <section class="contact-us" id="contact-us">
-                    <div id="contact" class="contact-area section-padding">
-                        <div class="container">
-                            <div class="section-title text-center">
-                                <h1>Get in Touch</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae risus nec dui
-                                    venenatis dignissim. Aenean vitae metus in augue pretium ultrices.</p>
-                            </div>
-
-                            <div class="row">
-                                <div class="col-lg-7">
-                                    <div class="contact">
-                                        <form class="form" name="enq" method="post" action="contact.php"
-                                            onsubmit="return validation();">
-                                            <div class="row">
-                                                <div class="form-group col-md-6">
-                                                    <input type="text" name="name" class="form-control"
-                                                        placeholder="Name" required="required">
-                                                </div>
-                                                <div class="form-group col-md-6">
-                                                    <input type="email" name="email" class="form-control"
-                                                        placeholder="Email" required="required">
-                                                </div>
-                                                <div class="form-group col-md-12">
-                                                    <input type="text" name="subject" class="form-control"
-                                                        placeholder="Subject" required="required">
-                                                </div>
-                                                <div class="form-group col-md-12">
-                                                    <textarea rows="6" name="message" class="form-control"
-                                                        placeholder="Your Message" required="required"></textarea>
-                                                </div>
-                                                <div class="col-md-12 text-center">
-                                                    <button type="submit" value="Send message" name="submit"
-                                                        id="submitButton" class="btn btn-contact-bg"
-                                                        title="Submit Your Message!">Send Message</button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-5">
-                                    <div class="single_address">
-                                        <i class="fa fa-map-marker"></i>
-                                        <h4>Our Address</h4>
-                                        <p>Mostom Hazi MOR, Khilgaon</p>
-                                    </div>
-                                    <div class="single_address">
-                                        <i class="fa fa-envelope"></i>
-                                        <h4>Send your message</h4>
-                                        <p>Info@green.com</p>
-                                    </div>
-                                    <div class="single_address">
-                                        <i class="fa fa-phone"></i>
-                                        <h4>Call us on</h4>
-                                        <p>(+880) 527 123 8533</p>
-                                    </div>
-                                    <div class="single_address">
-                                        <i class="fa fa-clock-o"></i>
-                                        <h4>Open Hours</h4>
-                                        <p>Mon - Fri: 08.00 - 16.00. <br>Sat: 10.00 - 14.00</p>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Map section -->
-                <div class="map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41315.13896649891!2d90.38498228901814!3d23.755335134611645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b80e827f19df%3A0x9c7482b95bc6d57c!2sKhilgaon%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1654831539770!5m2!1sen!2sbd"
-                        width="100%" height="370px" frameborder="0" style="border:0; margin:0;"
-                        allowfullscreen="true"></iframe>
+          <!-- Our specialty section -->
+          <section class="our-specialty" id="specialty">
+            <div class="container">
+              <h1 class="section-heading">Our Specialty</h1>
+              <div class="card-wrapper flex">
+                <div class="service-card -sm">
+                  <img src="./images/plate-1.png" alt="food" />
+                  <h2>Free Home delivery</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button class="btn btn-secondary">Order Now</button>
                 </div>
 
-                <!-- Footer -->
-                <footer>
-                    <div class="container">
-                        <div class="box">
-                            <h3>About us</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque amet assumenda facilis
-                                sit! Asperiores consequuntur corrupti adipisci similique!</p>
-                            <button class="btn btn-secondary">Read More</button>
-                        </div>
+                <div class="service-card -sm">
+                  <img src="./images/plate-2.png" alt="food" />
+                  <h2>30 Days Return Service</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button class="btn btn-primary">Order Now</button>
+                </div>
 
-                        <div class="box">
-                            <h3>Quick Links</h3>
-                            <ul>
-                                <li>
-                                    <a href="#">Home</a>
-                                </li>
-                                <li>
-                                    <a href="#">About us</a>
-                                </li>
-                                <li>
-                                    <a href="#">Products</a>
-                                </li>
-                                <li>
-                                    <a href="#">Blog</a>
-                                </li>
-
-                            </ul>
-                        </div>
-
-                        <div class="box">
-                            <h3>Follow Us On</h3>
-                            <div>
-                                <ul>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/shahriar-rhythm">
-                                            <img src="./icons/facebook.svg" alt="food">
-                                            <span>Facebook</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/shahriar-rhythm/">
-                                            <img src="./icons/twitter.svg" alt="food">
-                                            <span>Twitter</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/shahriar-rhythm/">
-                                            <img src="./icons/google.svg" alt="food">
-                                            <span>Google +</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.linkedin.com/in/shahriar-rhythm/">
-                                            <img src="./icons/instagram.svg" alt="food">
-                                            <span>Instagram</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="box social">
-                            <h3>Big Deal Offer</h3>
-                            <div class="post-wrap">
-                                <div>
-                                    <img src="./images/footer-img.jpg" alt="food">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-
-                <footer class="copyright">
-                    <div>
-                        Copyright © 2021. All rights reserved by <a href="https://shahriarrhythm.com">Shahriar
-                            Rhythm</a>.
-                    </div>
-                </footer>
-
+                <div class="service-card -sm">
+                  <img src="./images/plate-3.png" alt="food" />
+                  <h2>Money Back Guaranted</h2>
+                  <p>
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry.
+                  </p>
+                  <button class="btn btn-secondary">Order Now</button>
+                </div>
+              </div>
             </div>
+          </section>
+
+          <!-- Big deal section -->
+          <section class="big-deal" id="big-deal">
+            <div class="container">
+              <h1 class="section-heading text-pure">Big Deals of the Week</h1>
+
+              <div class="timer">
+                <div>
+                  <span>02</span>
+                  <span>Days</span>
+                </div>
+                <div>
+                  <span>24</span>
+                  <span>Hours</span>
+                </div>
+                <div>
+                  <span>55</span>
+                  <span>Minutes</span>
+                </div>
+                <div>
+                  <span>58</span>
+                  <span>Seconds</span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- News section -->
+          <section class="latest-news" id="blogs">
+            <div class="container">
+              <h1 class="section-heading">Latest News from Blogs</h1>
+              <div class="article-wrapper">
+                <article class="card -sm">
+                  <div>
+                    <img src="./images/coffee.jpg" alt="food" />
+                  </div>
+                  <div class="card-content">
+                    <div class="post-meta flex items-center justify-between">
+                      <span>July 03, 2017</span>
+                      <div>
+                        <span>Posted by <strong>green</strong></span>
+                        <span class="comment-count">12 Comments</span>
+                      </div>
+                    </div>
+
+                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more letters.
+                    </p>
+                  </div>
+                </article>
+
+                <article class="card -sm">
+                  <div>
+                    <img src="./images/donut.jpg" alt="food" />
+                  </div>
+                  <div class="card-content">
+                    <div class="post-meta flex items-center justify-between">
+                      <span>July 03, 2017</span>
+                      <div>
+                        <span>Posted by <strong>green</strong></span>
+                        <span class="comment-count">12 Comments</span>
+                      </div>
+                    </div>
+
+                    <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+                    <p>
+                      It is a long established fact that a reader will be
+                      distracted by the readable content of a page when looking
+                      at its layout. The point of using Lorem Ipsum is that it
+                      has a more letters.
+                    </p>
+                  </div>
+                </article>
+              </div>
+
+              <div class="text-center btn-wrapper">
+                <button class="btn btn-secondary">View All</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Subscribe section -->
+          <section class="subscribe" id="newsletter">
+            <div class="container flex items-center">
+              <div>
+                <img src="./images/subscribe.png" alt="food" />
+              </div>
+              <div>
+                <h1>Subscribe to our newsletter</h1>
+                <p>
+                  Lorem Ipsum as their default model text, and a search for
+                  'lorem ipsum' will uncover many web sites still in their
+                  infancy.
+                </p>
+                <div class="input-wrap">
+                  <input type="email" placeholder="email@green.com" />
+                  <button>Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Contact us section -->
+          <section class="contact-us" id="contact-us">
+            <div id="contact" class="contact-area section-padding">
+              <div class="container">
+                <div class="section-title text-center">
+                  <h1>Get in Touch</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Fusce vitae risus nec dui venenatis dignissim. Aenean vitae
+                    metus in augue pretium ultrices.
+                  </p>
+                </div>
+
+                <div class="row">
+                  <div class="col-lg-7">
+                    <div class="contact">
+                      <form
+                        class="form"
+                        name="enq"
+                        method="post"
+                        action="contact.php"
+                        onsubmit="return validation();"
+                      >
+                        <div class="row">
+                          <div class="form-group col-md-6">
+                            <input
+                              type="text"
+                              name="name"
+                              class="form-control"
+                              placeholder="Name"
+                              required="required"
+                            />
+                          </div>
+                          <div class="form-group col-md-6">
+                            <input
+                              type="email"
+                              name="email"
+                              class="form-control"
+                              placeholder="Email"
+                              required="required"
+                            />
+                          </div>
+                          <div class="form-group col-md-12">
+                            <input
+                              type="text"
+                              name="subject"
+                              class="form-control"
+                              placeholder="Subject"
+                              required="required"
+                            />
+                          </div>
+                          <div class="form-group col-md-12">
+                            <textarea
+                              rows="6"
+                              name="message"
+                              class="form-control"
+                              placeholder="Your Message"
+                              required="required"
+                            ></textarea>
+                          </div>
+                          <div class="col-md-12 text-center">
+                            <button
+                              type="submit"
+                              value="Send message"
+                              name="submit"
+                              id="submitButton"
+                              class="btn btn-contact-bg"
+                              title="Submit Your Message!"
+                            >
+                              Send Message
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-5">
+                    <div class="single_address">
+                      <i class="fa fa-map-marker"></i>
+                      <h4>Our Address</h4>
+                      <p>Mostom Hazi MOR, Khilgaon</p>
+                    </div>
+                    <div class="single_address">
+                      <i class="fa fa-envelope"></i>
+                      <h4>Send your message</h4>
+                      <p>Info@green.com</p>
+                    </div>
+                    <div class="single_address">
+                      <i class="fa fa-phone"></i>
+                      <h4>Call us on</h4>
+                      <p>(+880) 527 123 8533</p>
+                    </div>
+                    <div class="single_address">
+                      <i class="fa fa-clock-o"></i>
+                      <h4>Open Hours</h4>
+                      <p>Mon - Fri: 08.00 - 16.00. <br />Sat: 10.00 - 14.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Map section -->
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41315.13896649891!2d90.38498228901814!3d23.755335134611645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b80e827f19df%3A0x9c7482b95bc6d57c!2sKhilgaon%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1654831539770!5m2!1sen!2sbd"
+              width="100%"
+              height="370px"
+              frameborder="0"
+              style="border: 0; margin: 0"
+              allowfullscreen="true"
+            ></iframe>
+          </div>
+
+          <!-- Footer -->
+          <footer>
+            <div class="container">
+              <div class="box">
+                <h3>About us</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
+                  amet assumenda facilis sit! Asperiores consequuntur corrupti
+                  adipisci similique!
+                </p>
+                <button class="btn btn-secondary">Read More</button>
+              </div>
+
+              <div class="box">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About us</a>
+                  </li>
+                  <li>
+                    <a href="#">Products</a>
+                  </li>
+                  <li>
+                    <a href="#">Blog</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="box">
+                <h3>Follow Us On</h3>
+                <div>
+                  <ul>
+                    <li>
+                      <a href="https://www.linkedin.com/in/shahriar-rhythm">
+                        <img src="./icons/facebook.svg" alt="food" />
+                        <span>Facebook</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/shahriar-rhythm/">
+                        <img src="./icons/twitter.svg" alt="food" />
+                        <span>Twitter</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/shahriar-rhythm/">
+                        <img src="./icons/google.svg" alt="food" />
+                        <span>Google +</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/in/shahriar-rhythm/">
+                        <img src="./icons/instagram.svg" alt="food" />
+                        <span>Instagram</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="box social">
+                <h3>Big Deal Offer</h3>
+                <div class="post-wrap">
+                  <div>
+                    <img src="./images/footer-img.jpg" alt="food" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+
+          <footer class="copyright">
+            <div>
+              Copyright © 2021. All rights reserved by
+              <a href="https://shahriarrhythm.com">Shahriar Rhythm</a>.
+            </div>
+          </footer>
         </div>
+      </div>
     </div>
 
     <!-- jquery files -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
 
     <!-- custom js -->
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>
